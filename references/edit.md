@@ -23,7 +23,9 @@ creates. Keep category-level lines only where the reader needs to know what the 
 
 Superlatives and outcomes with nothing beside them: "fastest", "most reliable", "10x",
 "trusted by leading companies". Fix: attach proof from the source, soften to an attributed
-claim ("customers report"), or cut. Never invent the proof.
+claim ("customers report"), or keep it with `[TK: proof?]` and recommend a cut. Never invent
+the proof. When asked to add proof that does not exist, leave a labelled slot, the question that
+fills it, and a fallback line that is true today.
 
 ## 5. Wrong awareness level
 
@@ -38,7 +40,8 @@ drop features that prove nothing the buyer cares about.
 ## 7. Jargon
 
 Words the buyer would not say out loud. Test each word: does the buyer use it, and does it mean
-something specific to them? Precise technical terms the buyer uses daily are not jargon.
+something specific to them? Precise technical terms the buyer uses daily are not jargon; see
+the developer section of `surfaces.md` before flagging any technical term.
 
 Common offenders: leverage, seamless, robust, unlock, empower, revolutionize, cutting-edge,
 next-generation, best-in-class, world-class, end-to-end, holistic, synergy, game-changing,

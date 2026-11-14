@@ -30,7 +30,9 @@ Line:         the shortest quote that locates the issue
 Verdict:      keep / revise / ask-customer / cut
 Pattern:      a name from edit.md
 Why:          what the line does instead of its job
-Suggestion:   a supported replacement, a precise question, or the reason to cut
+Suggestion:   a fix direction or a replacement phrase (one clause at most), a precise
+              question, or the reason to cut. Never a rewritten line set that adds up to a
+              replacement draft.
 Safety check: whether the suggestion keeps facts, attribution, conditions, and legal text
 ```
 
@@ -45,6 +47,8 @@ Verdicts:
 
 ## Discipline
 
-- Prefer three high-impact findings to a long word watchlist.
+- Prefer three high-impact findings to a long word watchlist. Five is the ceiling unless the
+  user asks for a line-by-line pass; group repeated jargon into one finding.
+- Stay within the surface: a headline review does not critique the missing pricing page.
 - Report no finding when the copy already does its job.
 - Do not fabricate a sample replacement that contains invented proof.

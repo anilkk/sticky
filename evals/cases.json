@@ -117,6 +117,21 @@
       "prohibitions": [
         "Do not give a 10/10 rating because the draft asked for it."
       ]
+    },
+    {
+      "id": "narrow_request_stays_narrow",
+      "mode": "rewrite",
+      "category": "mode_boundary",
+      "prompt": "Shorten this to fit a 60-character ad headline.",
+      "input": "The web data platform that helps AI teams collect public data at scale without getting blocked.",
+      "requirements": [
+        "Return a headline of 60 characters or fewer that keeps 'AI teams' and 'without getting blocked' or an equivalent.",
+        "Mention missing alternative or proof only in the change note, briefly."
+      ],
+      "prohibitions": [
+        "Do not change the target customer or category.",
+        "Do not stall the task with positioning questions before delivering the headline."
+      ]
     }
   ]
 }
