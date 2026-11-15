@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Behavioral cases for comparing verbatim with an unassisted model or another messaging skill. Requirements are semantic; judges should not reward exact wording.",
+  "description": "Behavioral cases for comparing sticky with an unassisted model or another messaging skill. Requirements are semantic; judges should not reward exact wording.",
   "cases": [
     {
       "id": "rewrite_does_not_invent_proof",

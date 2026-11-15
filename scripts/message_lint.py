@@ -83,7 +83,7 @@ def main() -> int:
     text = strip_markdown(src)
     sents = sentences(src)
 
-    print("verbatim lint: a map of where to look, not a grade\n")
+    print("sticky lint: a map of where to look, not a grade\n")
 
     hits = 0
     for i, s in enumerate(sents, 1):

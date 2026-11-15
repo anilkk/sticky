@@ -1,6 +1,6 @@
 # Blinded comparison protocol
 
-Use this to compare `verbatim` with an unassisted model or another messaging skill.
+Use this to compare `sticky` with an unassisted model or another messaging skill.
 
 1. For each case in `cases.json`, run both systems with the same model, prompt, and input.
 2. Strip any skill names or self-references from outputs. Label them A and B at random.

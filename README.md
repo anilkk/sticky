@@ -1,39 +1,41 @@
-# Verbatim
+# Sticky
 
 Good product messaging is something a buyer can say back to you, in their own words, to
 someone who was not in the room.
 
-`verbatim` is also an Agent Skill that applies the rules below when you build, rewrite, or
+`sticky` is also an Agent Skill that applies the rules below when you build, rewrite, or
 review product marketing messaging with a coding agent: value propositions, homepage heroes,
 one-liners, launch posts, sales narratives, and battlecards. To install it:
 
 ##### NPM
 
 ```bash
-npx skills add anilkk/verbatim
+npx skills add anilkk/sticky
 ```
 
 ##### pnpm
 
 ```bash
-pnpm dlx skills add anilkk/verbatim
+pnpm dlx skills add anilkk/sticky
 ```
 
 Then pick a mode:
 
 ```txt
-/verbatim interview <product>   it interviews you, then builds the messaging doc from your answers
-/verbatim rewrite hero.md       it rewrites messaging you already have
-/verbatim review homepage.md    it critiques and leaves your file alone
+/sticky interview <product>   it interviews you, then builds the messaging doc from your answers
+/sticky rewrite hero.md       it rewrites messaging you already have
+/sticky review homepage.md    it critiques and leaves your file alone
 ```
 
 The site has the rules, a worked example, and the install steps:
-[anilkumark.de/verbatim](https://www.anilkumark.de/verbatim).
+[anilkumark.de/sticky](https://www.anilkumark.de/sticky).
 
 ## Why the name
 
-The best messaging is built from what customers say verbatim, and it succeeds when buyers repeat
-it verbatim. Everything in this repository serves one of those two ends.
+Sticky messaging is the kind a buyer remembers after the call and repeats to their boss. It
+sticks because it was built from words customers already use, and because it says one clear,
+provable thing. Everything in this repository serves those two ends. The name also nods to
+Chip and Dan Heath's *Made to Stick*.
 
 Most messaging fails before a word of copy is written. A team picks adjectives in a workshop,
 ships "the AI-powered platform for modern teams," and wonders why sales reps improvise their own
@@ -200,7 +202,7 @@ refuses to invent proof points, and judges messaging by whether a buyer could re
 
 ```txt
 SKILL.md                      the operating manual
-commands/                     optional /verbatim-interview, -rewrite, -review wrappers
+commands/                     optional /sticky-interview, -rewrite, -review wrappers
 references/interview.md       the positioning interview: customer, alternatives, proof
 references/frameworks.md      the books and frameworks, and when each one applies
 references/edit.md            messaging diagnoses and fidelity safeguards
@@ -216,7 +218,7 @@ samples/                      one homepage hero before and after, labelled as a 
 
 ### What each mode does
 
-**`/verbatim interview <product>`** asks before it writes. It wants the customer who loves you,
+**`/sticky interview <product>`** asks before it writes. It wants the customer who loves you,
 the alternative they replaced, three moments where the product mattered, and the exact words
 customers used. Then it fills in the messaging doc: one value proposition, three benefits,
 features as proof, and a four-paragraph story. Wherever it needs a fact only you have, it leaves
@@ -226,11 +228,11 @@ a marked gap:
 [TK: which customer said "we stopped babysitting scrapers"? Name and role.]
 ```
 
-**`/verbatim rewrite hero.md`** diagnoses the largest problem first, in this order: wrong
+**`/sticky rewrite hero.md`** diagnoses the largest problem first, in this order: wrong
 customer, missing alternative, no difference, unproven claim, jargon. It rewrites only as much
 as the request allows.
 
-**`/verbatim review homepage.md`** leads with a piece-level verdict, then marks each line
+**`/sticky review homepage.md`** leads with a piece-level verdict, then marks each line
 `keep`, `revise`, `ask-customer`, or `cut`. `ask-customer` means the line could be fixed, but
 the fix needs evidence that only your customers can supply.
 

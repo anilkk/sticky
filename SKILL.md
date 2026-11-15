@@ -1,5 +1,5 @@
 ---
-name: verbatim
+name: sticky
 description: "Build, rewrite, or review B2B product marketing messaging so a buyer can repeat it: value propositions, homepage heroes, one-liners, launch posts, sales narratives, and battlecards. Grounded in Dunford, Stratton, Fletch, Alex James, and Command of the Message. Refuses to invent proof. Use when messaging sounds generic, nobody can say what the product does, or every vendor sounds the same. Supports interview, rewrite, review, and lint modes."
 license: MIT
 metadata:
@@ -7,7 +7,7 @@ metadata:
   author: "Anil Kumar Krishnashetty"
 ---
 
-# Verbatim
+# Sticky
 
 Messaging works when a specific buyer can repeat it to someone who was not in the room. Generic
 messaging usually fails before wording enters the picture: it names no customer, no alternative,

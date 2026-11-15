@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate verbatim's runtime files, routing, eval cases, and samples."""
+"""Validate sticky's runtime files, routing, eval cases, and samples."""
 
 from __future__ import annotations
 
@@ -13,8 +13,8 @@ REQUIRED = [
     "SKILL.md", "README.md", "LICENSE", "skills.sh.json",
     "references/interview.md", "references/frameworks.md", "references/edit.md",
     "references/review.md", "references/surfaces.md", "assets/messaging-doc.md",
-    "commands/verbatim-interview.md", "commands/verbatim-rewrite.md",
-    "commands/verbatim-review.md", "evals/cases.json", "evals/JUDGE.md",
+    "commands/sticky-interview.md", "commands/sticky-rewrite.md",
+    "commands/sticky-review.md", "evals/cases.json", "evals/JUDGE.md",
     "scripts/message_lint.py", "samples/README.md",
     "samples/hero.before.md", "samples/hero.after.md",
 ]
@@ -42,7 +42,7 @@ fm = re.match(r"^---\n(.*?)\n---\n", skill, re.S)
 check(bool(fm), "SKILL.md has frontmatter")
 if fm:
     front = fm.group(1)
-    check(re.search(r"^name:\s*verbatim\s*$", front, re.M) is not None, "frontmatter name is verbatim")
+    check(re.search(r"^name:\s*sticky\s*$", front, re.M) is not None, "frontmatter name is sticky")
     desc = re.search(r'^description:\s*"(.*)"\s*$', front, re.M)
     check(bool(desc), "frontmatter has quoted description")
     if desc:
@@ -64,7 +64,7 @@ for c in cases:
 
 manifest = json.loads((ROOT / "skills.sh.json").read_text(encoding="utf-8"))
 listed = {s for g in manifest["groupings"] for s in g["skills"]}
-check("verbatim" in listed, "skills.sh.json lists verbatim")
+check("sticky" in listed, "skills.sh.json lists sticky")
 
 print(f"\n{len(failures)} failure(s)")
 sys.exit(1 if failures else 0)
